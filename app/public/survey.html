@@ -190,6 +190,8 @@
                     newFriend.scores[i] = 5;
                 }
             }); 
+
+            console.log(newFriend.scores);
         
             $.post("/api/friends", newFriend, function(data) {
              // Grab the result from the AJAX post so that the best match's name and photo are displayed.
